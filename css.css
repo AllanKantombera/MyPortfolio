@@ -72,15 +72,16 @@ nav {
 .boxes1 {
     width: 70%;		
     display: inline-block;
-
 }
 .boxes {
-    width: 40%;
-    border-radius: 5px;
+    width: 48%;
+    border-radius: 7px;
     display: inline-block;
-    border-color: #b8b5b5;
+    border-color: #0f0a35;
+    border: 4px;
     border-style: solid;
-    margin: px;
+    text-align: center;
+    
 }
 
     .card {
