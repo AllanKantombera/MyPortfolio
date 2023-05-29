@@ -1,3 +1,4 @@
+
 // Get references to DOM elements
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
@@ -53,7 +54,7 @@ startSlideShow();
 
 
 
-
+//search code
 function searchSections() {
   // Get the user input from the search input field
   var searchQuery = document.getElementById("searchInput").value.toLowerCase();
@@ -74,3 +75,27 @@ function searchSections() {
     }
   }
 }
+
+
+
+
+
+//greeting code
+document.addEventListener("DOMContentLoaded", function() {
+  var greetingElement = document.getElementById("greeting");
+  var currentTime = new Date();
+  var currentHour = currentTime.getHours();
+
+  var greeting;
+
+  if (currentHour < 12) {
+    greeting = "Good morning";
+  } 
+  else if (currentHour < 18) {
+    greeting = "Good afternoon";
+  } 
+  else {
+    greeting = "Good evening";
+  }
+  greetingElement.textContent = greeting;
+});
