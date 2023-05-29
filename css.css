@@ -186,3 +186,47 @@ a{
   input[type="submit"]:hover {
     background-color: #45a049;
   }
+
+
+
+
+  .progress-bar {
+    width: 30%;
+    height: 20px;
+    background-color: #504c4c;
+    border-radius: 20px;
+  }
+  
+  .progress {
+    width: 70%;
+    height: 100%;
+    background-color: #0661d8;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+  }
+
+  .progress2 {
+    width: 80%;
+    height: 100%;
+    background-color: #0661d8;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+  }
+
+
+
+  .animated-header {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 7;
+    }
+  }
+  
