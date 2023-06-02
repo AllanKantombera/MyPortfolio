@@ -6,59 +6,66 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css.css">
 </head>
-<body>
+
 <header>
 	<nav style="width: 100%;">
-			<ul class="animated-header">
-			  <li><a href="contacts.html" class="animated-header"><l>Contact</l></a></li>
-			  <li><a href="projcts.html" class="animated-header"><l>Projects</l></a></li>
+		<div class="grid-container">
+			<div class="grid-item2"><ul class="animated-header">
+			  <li><a href="contacts.html" class="animated-header"><l>CONTACTS</l></a></li>
+			  <li><a href="projcts.html" class="animated-header"><l>PROJECTS</l></a></li>
 			  <li><a href="skills.html" class="animated-header"><l>SKILLS</l></a></li>
-			</ul>
-			<img src="images/a4.png" width="200px" class="animated-header">
-		</nav>
+			</ul></div>
+			<div class="grid-item2">
+			<img src="images/a4.png" width="200px" class="animated-header" style="float: right;">
+		</div>
+	</div>
+</nav>
 </header>
-	<section>
-	<br><br><br>
+<body>
+<br><br><br><br><br>
 
-<div style="height: 300px;">
-	<div class="slideshow-container" >
-		<div class="slide">
-		  <img src="images/2.png" alt="Slide 1"  height="200px">
+<div class="grid-container">
+
+	<div class="grid-item">
+		<div class="slideshow-container" >
+			<div class="slide">
+			  <img src="images/2.png" alt="Slide 1"  >
+			</div>
+			<div class="slide">
+			  <img src="images/5.jpg" alt="Slide 2"  >
+			</div>
+			<div class="slide">
+			  <img src="images/1.png" alt="Slide 3" >
+			</div>
 		</div>
-		<div class="slide">
-		  <img src="images/5.jpg" alt="Slide 2"    height="300px">
-		</div>
-		<div class="slide">
-		  <img src="images/1.png" alt="Slide 3"    height="300px">
-		</div>
+	</div>
+
+	<div class="grid-item">
 		
-	  </div></div>
-	  <br>
-	
-<div style="float: right; padding: 3px;" class="animated-header">
-	<a href="https://web.facebook.com/allan.kantomberaowellos"><img src="images/fb.png" width="40px"></a>
-	<a href="https://www.instagram.com/allan_canto1/" ><img src="images/insta.png" width="40px"></a>
-	<a href="https://www.linkedin.com/in/allan-kantombera-6175a2223/"><img src="images/linked.png" width="40px"></a>
-	<a href="https://twitter.com/AllanKantombera" ><img src="images/twitter.png" width="40px"></a>
-</div>
-  <h3 id="greeting" class="animated-header" style="font-style: italic; font-family: fantasy; color: rgb(3, 58, 83);">HI</h2>
-<br><br>
-</section>
+		<h3><div id="clock"></div></h3>
+		<br><h3 id="greeting" style="font-family: monospace; margin: 20px; color: aliceblue; float: right;">HI</h3>
+
+	</div>
+  </div><br><br>
+
 <section>
-			<div style="margin: 30px;" class="animated-header">
-		<div class="boxes1">
-			<div class="card">
+			
+	<div class="grid-container">
+		<div class="grid-item2">
+			<div class="card" style="padding-left: 20px;">
 			<img src="images/allan1.jpg" alt="Image" style="width: 80%">
-			<div class="container">
-			  <h4>ALLAN KANTOMBERA</h4>
+			<div class="container1">
+			  <h4>ALLAN KANTOMBERA</h4><br>
 			  <h5>IOT ENGINEER | ROBOTICS AND ELECTRONICS ENGINEER |
 				3D MODELER | WEB DEVELOPER<br>
 			</h5>
 			</div>
 		</div>
-		</div>
+	</div>
+
+	<div class="grid-item2">
+	
 		<br>
-		<div class="boxes1">
 			<p>
 				My name is Allan Kantombera, i am a self taught IoT Engineer and Robotics & Electronics Engineer. Am more 
 				interested in Robotics & Electronics engineering and also Internet of Things 
@@ -75,59 +82,16 @@
 				3 axis Robotic Arm 
 				<br>
 			</p>
-		</div>	
-
-
+		</div>
 	</div>
 </section>
-
-<section><br>
-	<div class="container">
-		<div class="boxes">
-			<img src="images/33.jpg" width="100%">
-		</div>
-		<div class="boxes">
-			<img src="images/2.png" width="100%">
-		</div>
-	</div>
-<br><br>
-<h4>SOLAR TRACKER</h4>
-<div class="container">
-	<div class="boxes">
-		<img src="images/p2 (4).jpg" width="100%">
-	</div>
-	<div class="boxes">
-		<img src="images/p2 (2).jpg" width="100%">
-	</div>
-</div>
-<p>
-	This a Solar tracker, it an automated system that automatically 
-	Tilts the Solar panel towards where sunlight is coming from.
-	this system improve efficiency by making the solar panels absorb light energy at 90` angle.<br>
-	<a href="https://twitter.com/AllanKantombera/status/1541072623655948293">twitter tweet</a><br>
-	<a href="https://web.facebook.com/allan.kantomberaowellos/posts/pfbid02zecpgDdC2A2K6rwugfT33NfYPrE65y24nvPPySsZxmXGwFdjHmPZ9gt79nHJWfzpl">facebook post</a>
-</p>
-
-<br><br>
-<h4>EGG INCUBATOR</h4>
-<div class="container">
-	<div class="boxes">
-		<img src="images/inc.jpg" width="100%">
-	</div>
-	<div class="boxes">
-		<img src="images/incu.jpg" width="100%">
-	</div>
-</div>
-<p>
-	Egg Incubator, this a small egg incubator which is cheap and affordable to small holder farmers. 
-	It can also be powered by solar panel plus battery.<br>
-<a href="https://web.facebook.com/allan.kantomberaowellos/posts/pfbid02aTACFjXTYQX8m5LatrkswbUVBwoSB5PCebB4bW9wu6RjAa2rwyas8kbPT6bFYgP5l">Facebook Post</a>
 
 </p>
 
 <br>
 </section>
-
+<div class="grid-container">
+	<div class="grid-item2">
 <p><b>SKILLS | TOOLS | TECHNOLOGIES</b><br>
 	IOT ENGINEER | ROBOTICS AND ELECTRONICS ENGINEER |
 	3D MODELER | WEB DEVELOPER<br><br><b>TOOLS</b><BR>
@@ -138,9 +102,12 @@
 	In robotics is use C programming language which is the most used language in electronics projects<br>
 </p>
 <br><br>
-
-<div style="max-width: 300px; padding: 20px; border-style: solid; border-radius: 14px;">
+</div>
+<div class="grid-item2">
+<br><div style="background-color: #00030f; border-width: 3px; box-shadow: 0 4px 15px 0 rgba(0, 225, 255, 0.9); padding: 20px;
+max-width: fit-content; border-style: solid; border-radius: 14px;">
     <h2>Contact Us</h2>
+
     <form action="#" method="POST">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
@@ -155,8 +122,7 @@
     </form>
 </div>
 </div>
-
-<br>
+</div>
 
 <div>
 	<a href="contacts.html"><img src="images/whatsapp.png" width="40px"></a>

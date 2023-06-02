@@ -1,20 +1,24 @@
 header{
     background-color: rgb(0, 0, 0);
     width: 100%;
+    position: fixed;
     padding: 0px;
     margin: 0px;
     float: right;
     font-family: arial;
+    display: flex;
 }
 
 body{
     width: 100%;
     padding: 0px;
     margin: 0px;
-
+    color: white;
+    background-color: #08021b;
+    font-family: arial;
 }
 footer{
-    background-color: #08021b;
+    background-color: #090027;
     padding: 4px;
     width: 100%;
     text-align: center;
@@ -25,17 +29,18 @@ l{
     border-radius: 50px;
     border-width: 3px;
     padding: 3px;
-    margin: 4px;
-    color: white;
+    margin: 1px;
+    color: rgb(0, 225, 255);
 }
 
 nav {
-    background-color: #000000;
-    color: #fff;
-    height: 50px;
+    background-color: #00030f;
+    height: fit-content;
     display: flex;
+    padding-top: 3px;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 15px 0 rgba(0, 225, 255, 0.9);
   }
   
   nav ul {
@@ -46,12 +51,11 @@ nav {
   }
   
   nav li {
-    margin: 0 2px;
+    margin: 0 1px;
   }
   
   nav a {
     text-decoration: none;
-    color: #fff;
     font-size: 16px;
     padding: 5px;
     border-radius: 5px;
@@ -62,16 +66,37 @@ nav {
     border-radius: 40px;
     background-color: #444;
   }
-  
 
+
+
+  .grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+text-align: center;
+background-color: #00030f;
+box-shadow: 0 4px 7px 0 rgba(0, 225, 255, 0.9);
+border-radius: 5px;
+padding: 3%;
+font-weight: lighter;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .grid-item2 {
+    margin: 5px;
+    font-weight: lighter;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+  
   .container {
-    width: 95%;
-    text-align: center;
+    width: 99%;
+    margin: 4%;
+    display: flex;
 }
-.boxes1 {
-    width: 70%;		
-    display: inline-block;
-}
+
 .boxes {
     width: 35%;
     border-radius: 7px;
@@ -80,11 +105,11 @@ nav {
     border: 4px;
     border-style: solid;
     text-align: center;
-    
 }
 
     .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      background-color: #00030f;
+      box-shadow: 0 4px 15px 0 rgba(0, 225, 255, 0.9);
     width: 300px;
     border-radius: 10px;
     padding: 3px;
@@ -92,16 +117,23 @@ nav {
     font-weight: lighter;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-.card:hover {
-    box-shadow: 10px 18px 25px 0 rgba(151, 149, 149, 0.2);
-    
+.card1 {
+width: 90%;
+background-color: #00030f;
+box-shadow: 0 4px 15px 0 rgba(0, 225, 255, 0.9);
+border-radius: 10px;
+padding: 3%;
+font-weight: lighter;
+display: flex;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 p{
     font-family: arial;
     text-align: left;
     margin: 5px;
 }
+
 h5{
     font-family: arial;
     font-weight: lighter;
@@ -122,34 +154,37 @@ h3{
 
 }
 
-
 a{
     text-decoration: none;
 }
 
 .slideshow-container {
-    position: relative;
-    margin: auto;
-    height: 200px;
+    width: 70%;
+    height:fit-content;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 3px;
+    box-shadow: 0 4px 7px 0 rgba(0, 225, 255, 0.9);
   }
   
   .slide {
     display: none;
     text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
   }
   
   .slide img {
-    height: 300px;
+    width: 100%;
   }
 
-  
   h2 {
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
-
-
 
 
   form{
@@ -186,9 +221,6 @@ a{
   input[type="submit"]:hover {
     background-color: #45a049;
   }
-
-
-
 
   .progress-bar {
     width: 30%;
@@ -229,4 +261,17 @@ a{
       opacity: 7;
     }
   }
-  
+
+
+  #clock {
+    width: fit-content;
+    height: auto; 
+    float: right;
+    border: 2px solid #006dad;
+    border-radius: 5px;
+    box-shadow: 0 4px 7px 0 rgba(0, 225, 255, 0.9);
+    font-size: 36px;
+    line-height: 100px;
+    margin: 1px;
+    padding: 10px;
+  }
