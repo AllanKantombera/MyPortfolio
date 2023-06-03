@@ -101,3 +101,50 @@ function addLeadingZero(value) {
 }
 // Call updateTime function every second to keep updating the time
 setInterval(updateTime, 1000);
+
+function validateForm() {
+  // Retrieve the input values
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  
+  // Perform validation checks
+  if (name === "") {
+    alert("Please enter your name");
+    return false;
+  }
+  
+  if (email === "") {
+    alert("Please enter your email");
+    return false;
+  }
+  
+  // Additional validation checks can be added as needed
+  
+  // If all validations pass, the form can be submitted
+  return true;
+}
+
+function initMap() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+      
+      var mapOptions = {
+        center: { lat: latitude, lng: longitude },
+        zoom: 10
+      };
+      
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+      
+      // Additional map functionality can be added here
+      
+    }, function(error) {
+      // Handle error cases
+      console.error("Error retrieving location:", error);
+    });
+  } else {
+    // Geolocation is not supported by the browser
+    console.error("Geolocation is not supported");
+  }
+}

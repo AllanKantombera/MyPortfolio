@@ -285,8 +285,6 @@ a{
     transition: width 0.3s ease;
   }
 
-
-
   .animated-header {
     animation: slideIn 1s ease-in-out;
   }
@@ -302,7 +300,6 @@ a{
     }
   }
 
-
   #clock {
     width: fit-content;
     height: auto; 
@@ -316,3 +313,26 @@ a{
     padding: 10px;
   }
 
+  #map {
+    height: 250px;
+    width: 100%;
+  }
+
+  .loading {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border: 8px solid #ff0000;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

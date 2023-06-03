@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+
 </head>
 
 <header>
@@ -22,7 +24,7 @@
 	</div>
 </nav>
 </header>
-<body>
+<body onload="initMap()">
 <br><br><br><br><br>
 
 <div class="grid-container">
@@ -42,9 +44,11 @@
 	</div>
 
 	<div class="grid-item">
-		
+
 		<h3><div id="clock"></div></h3>
 		<br><h3 id="greeting" style="font-family: monospace; margin: 20px; color: aliceblue; float: right;">HI</h3>
+		<div class="loading" style="float: left;"></div>
+		<div class="loading" style="float: left;"></div>
 
 	</div>
   </div><br><br>
@@ -123,12 +127,10 @@ max-width: fit-content; border-style: solid; border-radius: 14px;">
 </div>
 </div>
 
-<div>
-	<a href="contacts.html"><img src="images/whatsapp.png" width="40px"></a>
-	<a href="contacts.html"><img src="images/tele.png" width="40px"></a>
-	
-</div>
-<br>
+<h2>Map with Current Location</h2>
+<div id="map"></div>
+
+
 <script src="js.js"></script>
 </body>
 <footer>
