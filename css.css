@@ -206,7 +206,7 @@ a{
   }
   
   input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #052906;
     color: white;
     border: none;
     padding: 10px 10px;
@@ -214,34 +214,74 @@ a{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
   }
   
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #00ff0d;
+  }
+  input{
+    border-radius: 7px;
   }
 
   .progress-bar {
-    width: 30%;
+    width: 50%;
     height: 20px;
-    background-color: #504c4c;
+    background-color: #c41111;
     border-radius: 20px;
   }
   
   .progress {
-    width: 70%;
+    width: 200px;
     height: 100%;
-    background-color: #0661d8;
-    border-radius: 5px;
+    background-color: #328bff;
+
     transition: width 0.3s ease;
+    border-radius: 20px;
   }
 
   .progress2 {
     width: 80%;
     height: 100%;
     background-color: #0661d8;
-    border-radius: 5px;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+  }
+  .progress3 {
+    width: 70%;
+    height: 100%;
+    background-color: #0661d8;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+  }
+  .progress4 {
+    width: 80%;
+    height: 100%;
+    background-color: #0661d8;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+  }
+
+  .progressWEB {
+    width: 80%;
+    height: 100%;
+    background-color: #0661d8;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+  }
+  .progressELE {
+    width: 90%;
+    height: 100%;
+    background-color: #0661d8;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+  }
+  .progress3D {
+    width: 60%;
+    height: 100%;
+    background-color: #0661d8;
+    border-radius: 20px;
     transition: width 0.3s ease;
   }
 
@@ -275,3 +315,4 @@ a{
     margin: 1px;
     padding: 10px;
   }
+
