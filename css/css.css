@@ -17,6 +17,7 @@ body{
     background-color: #08021b;
     font-family: arial;
 }
+
 footer{
     background-color: #090027;
     padding: 4px;
@@ -31,6 +32,7 @@ l{
     padding: 3px;
     margin: 1px;
     color: rgb(0, 225, 255);
+    box-shadow: 0 4px 15px 0 rgba(0, 225, 255, 0.9);
 }
 
 nav {
@@ -97,16 +99,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
 }
 
-.boxes {
-    width: 35%;
-    border-radius: 7px;
-    display: inline-block;
-    border-color: #484849;
-    border: 4px;
-    border-style: solid;
-    text-align: center;
-}
-
     .card {
       background-color: #00030f;
       box-shadow: 0 4px 15px 0 rgba(0, 225, 255, 0.9);
@@ -130,7 +122,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 p{
     font-family: arial;
-    text-align: left;
     margin: 5px;
 }
 
@@ -153,6 +144,12 @@ h3{
     color: white;
 
 }
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 a{
     text-decoration: none;
@@ -180,11 +177,6 @@ a{
     width: 100%;
   }
 
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
 
 
   form{
@@ -336,3 +328,4 @@ a{
       transform: rotate(360deg);
     }
   }
+  

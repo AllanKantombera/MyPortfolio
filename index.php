@@ -4,7 +4,7 @@
 	<title>AllanCanto Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css.css">
+	<link rel="stylesheet" href="css/css.css">
 	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
 
 </head>
@@ -12,14 +12,14 @@
 <header>
 	<nav style="width: 100%;">
 		<div class="grid-container">
-			<div class="grid-item2"><ul class="animated-header">
-			  <li><a href="contacts.html" class="animated-header"><l>CONTACTS</l></a></li>
-			  <li><a href="projcts.html" class="animated-header"><l>PROJECTS</l></a></li>
-			  <li><a href="skills.html" class="animated-header"><l>SKILLS</l></a></li>
+			<div class="grid-item2"><ul>
+			  <li><a href="contacts.php"><l>CONTACTS</l></a></li>
+			  <li><a href="projcts.php"><l>PROJECTS</l></a></li>
+			  <li><a href="skills.php"><l>SKILLS</l></a></li>
 			</ul>
 		</div>
 			<div class="grid-item2">
-			<img src="images/a4.png" width="200px" class="animated-header" style="float: right;">
+			<img src="images/a4.png" width="200px" style="float: right;">
 		</div>
 	</div>
 </nav>
@@ -69,22 +69,24 @@
 	</div>
 
 	<div class="grid-item2">
-			<p>
-				My name is Allan Kantombera, i am a self taught IoT Engineer and Robotics & Electronics Engineer. Am more 
-				interested in Robotics & Electronics engineering and also Internet of Things 
-				engineering (IoT). My journey started in 2018 when I start teaching myself more 
-				 programming and robotics & electronics engineering. Since 2019 I have done couple
-				  of project in IoT engineering, Robotics & Electronics and also web development, 
-				  person projects and group projects.<br><br>
-				<b>EXPERIENCE</b><br>
-				Iot Engineer @NxtGen Labs (Intern)<br><br>
-				<b>PROJECTS</b><br>
-				Solar Tracker<br>
-				Egg Incubator<br>
-				Smoke detector/fire warning system<br>
-				3 axis Robotic Arm 
-				<br>
-			</p>
+	<?php
+	require_once 'php/php1.php';
+
+    // SQL query to retrieve data from the database
+    $sql = "SELECT * FROM myportfolio";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // Output data of each row
+        while($row = $result->fetch_assoc()) {
+            echo "<p>" . $row["myportfolio"]. "</p>";
+        }
+    } else {
+        echo "0 results";
+    }
+
+    ?>
+
 		</div>
 	</div>
 </section>
@@ -97,17 +99,51 @@
 	<div class="grid-item2">
 <p><b>SKILLS | TOOLS | TECHNOLOGIES</b><br>
 	IOT ENGINEER | ROBOTICS AND ELECTRONICS ENGINEER |
-	3D MODELER | WEB DEVELOPER<br><br><b>TOOLS</b><BR>
-	In Iot projects i use arduino microcontroller and supporting IDEs which i use to program the arduino
-	<br>In Robotics & Electronics projects i also use Arduino microcontroller<br>
-	In 3D modelling i use WINGS3D software and 3D Builder<br><br>
+	3D MODELER | WEB DEVELOPER</p>
+	<b>TOOLS</b><br>
+	<?php
+	require_once 'php/php1.php';
+
+    // SQL query to retrieve data from the database
+    $sql = "SELECT * FROM skills";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // Output data of each row
+        while($row = $result->fetch_assoc()) {
+            echo "<p>" . $row["tools"]. "</p>";
+        }
+    } else {
+        echo "0 results";
+    }
+
+    ?>
+	
 	<b>TECHNOLOGIES</b><br>
-	In robotics is use C programming language which is the most used language in electronics projects<br>
+	<?php
+	require_once 'php/php1.php';
+
+    // SQL query to retrieve data from the database
+    $sql = "SELECT * FROM skills";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // Output data of each row
+        while($row = $result->fetch_assoc()) {
+            echo "<p>" . $row["technologies"]. "</p>";
+        }
+    } else {
+        echo "0 results";
+    }
+    // Close the connection
+    $conn->close();
+    ?>
 </p>
 <br><br>
 </div>
-<div class="grid-item2">
-<br><div style="background-color: #00030f; border-width: 3px; box-shadow: 0 4px 15px 0 rgba(0, 225, 255, 0.9); padding: 20px;
+<div class="grid-item2"><br>
+
+<div style="background-color: #00030f; border-width: 3px; box-shadow: 0 4px 15px 0 rgba(0, 225, 255, 0.9); padding: 20px;
 max-width: fit-content; border-style: solid; border-radius: 14px;">
     <h2>Contact Us</h2>
 
@@ -131,11 +167,11 @@ max-width: fit-content; border-style: solid; border-radius: 14px;">
 <div id="map"></div>
 
 
-<script src="js.js"></script>
+<script src="js/js.js"></script>
 </body>
 <footer>
 	<br>
-	<h6>Follow Me On<a href="https://web.facebook.com/allan.kantomberaowellos"><l>FACEBOOK</l></a>
+	<h6>Follow Me On_<a href="https://web.facebook.com/allan.kantomberaowellos"><l>FACEBOOK</l></a>
 		<a href="https://twitter.com/AllanKantombera"><l>TWITTER</l></a><a href="https://www.instagram.com/allan_canto1/"><l>INSTAGRAM</l></a></h6>
 	<br>
 	<h6>

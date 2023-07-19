@@ -1,4 +1,3 @@
-// Get references to DOM elements
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 let slideInterval;
@@ -11,7 +10,7 @@ function showSlide() {
   // Show the current slide
   slides[currentSlide].style.display = 'block';
 }
-// Function to change the slide (next/previous)
+// Function to change the slide 
 function changeSlide(n) {
   currentSlide += n;
   // Wrap around to the first slide if at the end
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var greeting;
 
   if (currentHour < 12) {
-    greeting = "GOON MORNING!!";
+    greeting = "GOOD MORNING!!";
   } 
   else if (currentHour < 18) {
     greeting = "GOOD AFTERNOON!!";
@@ -118,9 +117,7 @@ function validateForm() {
     return false;
   }
   
-  // Additional validation checks can be added as needed
-  
-  // If all validations pass, the form can be submitted
+
   return true;
 }
 
